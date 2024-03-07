@@ -11,8 +11,8 @@ else:
 
 # initial variable
 # information of base
-height = 500  # Height of the cylinder
-radius = 250  # Radius of the cylinder base
+height = 40  # Height of the cylinder
+radius = 40  # Radius of the cylinder base
 
 # create base - solid cylinder
 myPart = myModel.Part(name="Part-base", dimensionality=THREE_D, type=DEFORMABLE_BODY)
@@ -23,8 +23,8 @@ mySketch.CircleByCenterPerimeter(center=(0.0, 0.0), point1=(radius, 0.0))
 myPart.BaseSolidExtrude(sketch=mySketch, depth=height)
 
 # information of solid fibre
-fibre_length_solid = 60
-fibre_radius_solid = 7
+fibre_length_solid = 6
+fibre_radius_solid = 0.007
 fibre_num_solid = 50
 
 # create solid fibre
